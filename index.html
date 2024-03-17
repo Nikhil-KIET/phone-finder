@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone-finder</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .i-card img{
+            height: 630px;
+        }
+        #img{
+            height: 820px;
+        }
+        .itm{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+
+        }
+        .itm-con{
+            display: none;
+        }
+       
+        
+
+    </style>
+</head>
+
+<body>
+    <main class="wrapper bg-[#1D2734] w-screen h-[690px] flex-col items-center justify-center ">
+        
+        <nav class="h-24 flex-col items-center justify-center pt-5">
+            <div class="menu flex justify-evenly items-center">
+                <h1>Hot Gadgets</h1>
+                <div class="btn px-3 py-3 bg-[#6419E6] rounded-xl">
+                    <p>SIGN UP</p>
+                </div>
+            </div>
+        </nav>
+        <div class="con text-[#A6ACBA] flex justify-start items-center w-screen content-center flex-col space-y-5 h-[80%]">
+            <h1>Apple Iphone 13 Pro Max</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+            <p>have suffered alteration in some form, by injected humour.</p>
+            <div class="btn px-3 py-3 bg-[#6419E6] rounded-xl">
+                <p>SIGN UP</p>
+            </div>
+        </div>
+        <div class="i-card bg-[#1D232A] w-screen h-[500px] flex">
+            <div class="img-1 absolute left-[65%] top-[65%]">
+                <img src="https://tasmim-tahsin.github.io/PhoneHuntingAPI/images/pngwing%202.png" alt="" >
+            </div>
+           <div class="img-2 absolute left-[33%] top-[44%]">
+            <img id="img" src="https://tasmim-tahsin.github.io/PhoneHuntingAPI/images/pngwing%202.png" alt="">
+           </div>
+            <div class="img-3 absolute left-[8%] top-[65%]">
+                <img src="https://tasmim-tahsin.github.io/PhoneHuntingAPI/images/pngwing%202.png" alt="" >
+            </div>
+
+        </div>
+        <div class="search-bar bg-[#1D232A] flex flex-col h-[280px] items-center text-white space-y-20">
+            <h1>Search Your Phone</h1>
+            <div class="input flex gap-5">
+                <input type="text" name="" id="input" class=" w-[400px] px-2 py-3 rounded-lg bg-inherit border-[0.2px] border-[#A6ACBA]" placeholder="eg: oppo,samsung,nokia...">
+                <div class="btn px-3 py-3 bg-[#6419E6] rounded-xl" id="btn">
+                    <p>SIGN UP</p>
+                </div>
+            </div>
+           
+            
+        </div>
+        
+        <d class="cont">
+            <div class="output  bg-[#1D232A] flex flex-wrap space-x-10 justify-evenly h-screen space-y-20 gap-10" id="output">
+            
+        
+
+
+
+            </div>
+            <div class="itm-con w-[100%] h-[100%]  justify-center items-center z-10 bg-black absolute" id="itm-con" >
+
+            </div>
+
+        </d>
+        
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
